@@ -7,5 +7,5 @@ import me.dio.claro_bootcamp.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    
+    boolean existsByAccountNumber(String accountNumber);
 }
